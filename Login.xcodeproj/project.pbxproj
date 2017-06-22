@@ -14,6 +14,7 @@
 		F22A657C1E9E6F0900AB578C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22A657A1E9E6F0900AB578C /* LaunchScreen.storyboard */; };
 		F22A65871E9E6F0900AB578C /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A65861E9E6F0900AB578C /* LoginTests.swift */; };
 		F22A65921E9E6F0900AB578C /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A65911E9E6F0900AB578C /* LoginUITests.swift */; };
+		F24E1D171EA62F8400BDE9AF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E1D161EA62F8400BDE9AF /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F22A658D1E9E6F0900AB578C /* LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22A65911E9E6F0900AB578C /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		F22A65931E9E6F0900AB578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24E1D161EA62F8400BDE9AF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		F22A65651E9E6F0900AB578C = {
 			isa = PBXGroup;
 			children = (
+				F24E1D161EA62F8400BDE9AF /* ProfileViewController.swift */,
 				F22A65701E9E6F0900AB578C /* Login */,
 				F22A65851E9E6F0900AB578C /* LoginTests */,
 				F22A65901E9E6F0900AB578C /* LoginUITests */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24E1D171EA62F8400BDE9AF /* ProfileViewController.swift in Sources */,
 				F22A65741E9E6F0900AB578C /* ViewController.swift in Sources */,
 				F22A65721E9E6F0900AB578C /* AppDelegate.swift in Sources */,
 			);
@@ -503,6 +507,7 @@
 				F22A65981E9E6F0900AB578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22A65991E9E6F0900AB578C /* Build configuration list for PBXNativeTarget "LoginTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				F22A659B1E9E6F0900AB578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22A659C1E9E6F0900AB578C /* Build configuration list for PBXNativeTarget "LoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				F22A659E1E9E6F0900AB578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

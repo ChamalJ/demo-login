@@ -1,23 +1,53 @@
-//
-//  ViewController.swift
-//  Login
-//
-//  Created by Chamal Jayasuriya on 4/12/17.
-//  Copyright © 2017 Chamal Jayasuriya. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var pwdText: UITextField!
+    @IBOutlet weak var messageLbl: UILabel!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    @IBAction func loginBtn(_ sender: UIButton) {
+        
+        public self.emailText.resignFirstResponder()
+        self.pwdText.resignFirstResponder()
+        
+        
+        if self.emailText.text == "chamal@flatorb.com" && self.pwdText.text == "Abc@1234"{
+            
+            
+            
+            
+            performSegue(withIdentifier: "logout", sender: nil);
+        }else{
+            
+            
+            let alertController = UIAlertController(title: "Login failed", message: "Check your cardinalities", preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                // ...
+            }
+            let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+                // ...
+            }
+            
+            alertController.addAction(OKAction)
+            
+            self.present(alertController, animated: true) {
+                // ...
+            }
+            
+        }
+        
+        
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
     }
 
 
