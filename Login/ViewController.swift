@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBAction func loginBtn(_ sender: UIButton) {
         
-        public self.emailText.resignFirstResponder()
+        //public self.emailText.resignFirstResponder()
         self.pwdText.resignFirstResponder()
         
         
